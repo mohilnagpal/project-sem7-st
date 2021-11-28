@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Montserrat:100,200,300,400,500,600,700,800,900"
+      rel="stylesheet"
+    />
+
+    <title>Stocked IT</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet" />
+
+    <!-- Additional CSS Files -->
+    <link rel="stylesheet" href="../static/css/fontawesome.css" />
+    <link rel="stylesheet" href="../static/css/templatemo-grad-school.css" />
+    <link rel="stylesheet" href="../static/css/owl.css" />
+    <link rel="stylesheet" href="../static/css/lightbox.css" />
+    <link rel="stylesheet" href="../static/css/sectors.css" />
+    <link rel="stylesheet" href="../static/css/modal_button.css" />
+  </head>
+
+  <body background="../static/images/courses-bg.jpg">
+    <!--header-->
+    <!-- <header class="main-header clearfix" role="header">
+      <div class="logo">
+        <a href="#"><em>Stocked</em>IT 📈</a>
+      </div>
+    </header>
+     -->
+    <header class="main-header clearfix" role="header">
+      <div class="logo">
+        <a href="/"><em>Stocked</em>IT 📈</a>
+      </div>
+      <a href="#menu" class="menu-link"><i class="fa fa-bars"></i></a>
+      <nav id="menu" class="main-nav" role="navigation">
+        <ul class="main-menu">
+          <li><a href="/">Home</a></li>
+        </ul>
+      </nav>
+    </header>
+  
+    
+    
+    
+    
+    
+    <div class="section-heading">
+      <h2>Electrical Products</h2>
+    </div>
+
+
+
+
+
+    <div>
+      <table>
+        <tr id="header">
+          <th>Stock Name</th>
+          <th>Dividend Yield (%)</th>
+          <th>5 Year CAGR (%)</th>
+          <th>Target Price</th>
+          <th>Market Capitalization</th>
+          <th>ROCE</th>
+          <th>StockedIt Points</th>
+        </tr>
+        <tr>
+          <td>{{ eleclist[0][0] }}</td>
+          <td>{{ eleclist[0][1] }}</td>
+          <td>{{ eleclist[0][2] }}</td>
+          <td>{{ eleclist[0][3] }}</td>
+          <td>{{ eleclist[0][4] }}</td>
+          <td>{{ eleclist[0][5] }}</td>
+          <td>{{ eleclist[0][6] }}</td>
+        </tr>
+        <tr>
+          <td>{{ eleclist[1][0] }}</td>
+          <td>{{ eleclist[1][1] }}</td>
+          <td>{{ eleclist[1][2] }}</td>
+          <td>{{ eleclist[1][3] }}</td>
+          <td>{{ eleclist[1][4] }}</td>
+          <td>{{ eleclist[1][5] }}</td>
+          <td>{{ eleclist[1][6] }}</td>
+
+        </tr>
+        <tr>
+          <td>{{ eleclist[2][0] }}</td>
+          <td>{{ eleclist[2][1] }}</td>
+          <td>{{ eleclist[2][2] }}</td>
+          <td>{{ eleclist[2][3] }}</td>
+          <td>{{ eleclist[2][4] }}</td>
+          <td>{{ eleclist[2][5] }}</td>
+          <td>{{ eleclist[2][6] }}</td>
+
+        </tr>
+        <tr>
+          <td>{{ eleclist[3][0] }}</td>
+          <td>{{ eleclist[3][1] }}</td>
+          <td>{{ eleclist[3][2] }}</td>
+          <td>{{ eleclist[3][3] }}</td>
+          <td>{{ eleclist[3][4] }}</td>
+          <td>{{ eleclist[3][5] }}</td>
+          <td>{{ eleclist[3][6] }}</td>
+
+        </tr>
+        <tr>
+          <td>{{ eleclist[4][0] }}</td>
+          <td>{{ eleclist[4][1] }}</td>
+          <td>{{ eleclist[4][2] }}</td>
+          <td>{{ eleclist[4][3] }}</td>
+          <td>{{ eleclist[4][4] }}</td>
+          <td>{{ eleclist[4][5] }}</td>
+          <td>{{ eleclist[4][6] }}</td>
+
+        </tr>
+        
+      </table>
+    </div>
+    
+    <br />
+    <br />
+    
+    <div class="button-self">
+      <input
+        class="modal-btn"
+        type="checkbox"
+        id="modal-btn"
+        name="modal-btn"
+      />
+      <label for="modal-btn">
+        INSIGHTS<i class="uil uil-expand-arrows"></i
+      ></label>
+      <div class="modal">
+        <div class="modal-wrap">
+          <p><b>POSITIVES:</b></p>
+          <p style="color: rgb(55, 0, 255)">
+            {{ ",".join(eleclist[0][7]) }}
+            <br>
+            {{ ",".join(eleclist[1][7]) }}
+            <br>
+            {{ ",".join(eleclist[2][7]) }}
+            <br>
+            {{ ",".join(eleclist[3][7]) }}
+            <br>
+            {{ ",".join(eleclist[4][7]) }}
+            
+          </p>
+          <p><b>NEGATIVES:</b></p>
+          <p style="color: rgb(119, 78, 16)">
+            {{ ",".join(eleclist[0][8]) }}
+            <br>
+            {{ ",".join(eleclist[1][8]) }}
+            <br>
+            {{ ",".join(eleclist[2][8]) }}
+            <br>
+            {{ ",".join(eleclist[3][8]) }}
+            <br>
+            {{ ",".join(eleclist[4][8]) }}
+            
+          </p>
+        </div>
+      <br>
+      <br>
+      </div>
+    </div>
+
+    <!-- <div class="section-heading">
+      <h2>Outline
+      </h2>
+    </div> -->
+
+    <div class="para-content">
+      <br>
+      <br>
+      <br>
+      <h1><strong>OUTLINE</strong></h1>
+      <br>
+      <br>
+      <h3>Abstract:</h3>
+      <br>
+      <p> Due to the volatile nature of stocks people often perceive it as gambling. The stock market isn’t just based on chance like gambling but a variety of factors like economic conditions, company information and so on. You can always tip the scales in your favour by having adequate research. StockedIT can help you in this research.
+        StockedIT simplifies the fundamentalal analysis of all the stocks available in the sector. The companies are ranked in each sector depending on their performance with these indicators and the best-performing stocks for long-term risk-free investments. 
+        StockedIT uses a variety of indicators some of these are:</p>
+      <br>
+      
+      <p><b>Dividend Yield:</b> The dividend yield, expressed as a percentage, is a financial ratio (dividend/price) that shows how much a company pays out in dividends each year relative to its stock price to its shareholders.</p>
+        <br>
+      <p><b>5 Yr CAGR: </b> it is the 5-year compounded annual growth rate of the stock. </p>
+        <br>
+      <p><b>Market Capitalization:</b> Market capitalization refers to how much a company is worth as determined by the stock market.</p>
+        <br>
+      <p><b>StockedIT Points: </b> Points are calculated by our model by measuring the stock’s performance on various fundamental indicators. Some of them are listed below.</p>
+        <br>
+      <p><b>Return On Capital Employed:</b> it is a profitability ratio that can help understand how well a company is generating profits from its capital as it is put to use. This capital includes shareholder funds and the noncurrent liabilities(loans and debts) of the company. <i><b>More the ROCE better the stock. 
+        </b></i> </p>
+        <br>
+      
+      <p><b>Reserves & Surplus:</b> Reserves & Surplus are profits generated from the business that is retained by the company. These reserves can be used for specific purposes like buying fixed assets, paying for legal settlements, debt repayments, or payment of dividends.
+        <i><b>An increasing trend in Reserves & Surplus is always a good sign.
+      </b></i> </p>
+      <br>
+
+      <p><b>Revenue From Operations:</b> Revenue from operations is the income generated by an entity from its daily core business operations. If the entity is able to generate a steady flow of income from its operations, <i><b>it is always a good sign. </b></i> </p>
+      <br>
+
+      <p><b>Profit/Loss For The Period:</b> Profit simply means revenue that remains after expenses. These expenses include tax, interest, depreciation (reduction in the value of a tangible asset due to wear and tear or technological obsolescence), and amortization (reduction in the value of intangible assets such as software, copyrights, etc). </p>
+      <br>
+    
+
+      <p><b>Return On Capital Employed:</b> it is a profitability ratio that can help understand how well a company is generating profits from its capital as it is put to use. This capital includes shareholder funds and the noncurrent liabilities(loans and debts) of the company. <i><b>More the ROCE better the stock. 
+      </b></i> </p>
+      <br>
+  
+
+      <p><b>Inventory Turnover Ratio:</b> Inventory Turnover ratio is an activity ratio that determines the number of times goods were manufactured and sold in a year by the entity. <b><i>An increasing inventory turnover ratio is always a good sign and vice versa.
+      </i></b> </p>
+      <br>
+
+      <p><b>Reserves To Share Capital :</b> Ratio of reserves produced to share capital input in the business. <b><i>Lower capital input producing higher reserves is a good sign</i></b>. IT companies perform very well on this ratio whereas it is quite less for investment-heavy sectors.  </p>
+      <br>
+
+      <p><b>Trade Receivables:</b> It means the number of payments due to the business by its customers. It is considered as a part of the current assets. <b><i> If the trade receivable component is greater than 50% of the current assets, it can be a negative sign as the free cash flow of the business is being hampered. </i></b> </p>
+      <br>
+
+      <p><b>Earnings Before Tax:</b>  It is a company's net income before income tax expense and interest expenses are deducted. EBIT is used to analyze the performance of a company's core operations without the costs of the capital structure and tax expenses impacting profit.
+        It is a very important component for analysis. It is used to uncover the best-performing stocks among its peers in the same sector.  </p>
+      <br>
+
+      <p><b>Debt To Equity Ratio:</b> It is a solvency ratio that calculates the weight of total debt and financial liabilities against total shareholders’ equity.. This ratio highlights how a company’s capital structure is tilted either toward debt or equity financing. <b><i>Although a general rule says a debt to equity ratio greater than 2 for a company is not good, but it totally depends on the sector the entity belongs to.
+      </i></b>
+      </p>
+      <br>
+
+      <p><b>Current Ratio:</b> The current ratio compares all of a company's current assets to its current liabilities. · It is a liquidity ratio that measures a company's ability to pay short-term obligations or those due within one year. <b><i>A current ratio below 1:1, where current assets are lower than current liabilities is a dangerous position.</i></b> </p>
+      <br>
+
+      <p><b>Net Cashflow From Operating Activities:</b> Cash flows from operating activities is a section of a company's cash flow statement that explains the sources and uses of cash from ongoing regular business activities in a given period. This typically includes net income from the income statement, adjustments to net income, and changes in working capital. <b><i>It must be increasing, negative net cash flow means the core operations of the company are not generating sufficient cash. </i></b> </p>
+      <br>
+
+      <p><b>Free Cash Flow:</b> it is an important indicator for analysis. It is the cash a company generates after taking into consideration cash outflows that support its operations and maintain its capital assets. In other words, free cash flow is the cash left over after a company pays for its operating expenses and capital expenditures (rent, payroll, etc.). A company can use it as it pleases. <b><i>Negative cash flows back-to-back for more than 2 years is a very dangerous sign.</i></b></p>
+      <br>
+
+      <p><b>Quarterly Sales From Operations:</b> sales made within a quarter are disclosed in quarterly reports. A financial year has four quarters. Each quarter is made up of 3 months. <b><i>Quarterly results can help investors to get better insights into their companies, find trends and evaluate decisions.</i></b> </p>
+      <br>
+
+      <p><b>Quarterly Profit Loss:</b> It is disclosed every quarter within the quarterly reports. Profits or losses made in these quarters impact the stock price of the company. </p>
+      <br>
+
+      <p><b>Pledged Shares (if any):</b> Pledging of shares is an arrangement in which the promoters of a company use their shares as collateral to fulfill their financial requirements. this reduces the promoters' shareholding, and the value of the stock is decreased as the confidence in the company is lost.
+        <b><i>A company having pledged shares is a negative sign </i></b>unless and until it is done to fulfill SEBI requirements.</p>
+      <br>
+
+      <p><b>Price to Earnings Ratio:</b> The price-to-earnings ratio (P/E ratio) is the ratio for valuing a company that measures its current share price relative to its earnings per share (EPS).
+        P/E ratios are used by investors and analysts to determine the relative value of a company's shares in an apples-to-apples comparison. It can also be used to compare a company against its own historical record or to compare aggregate markets against one another or over time.
+      It is generally compared between peers to discover a value-for-money stock in the sector basket. If stock PE is less than the sector PE it is considered to be a good stock, and vice versa. But analysis with this indicator is very complicated a lot of other factors are also involved.</p>
+      <br>
+      <br>
+
+
+  </div>
+  </body>
+</html>

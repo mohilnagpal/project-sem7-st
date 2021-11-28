@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Montserrat:100,200,300,400,500,600,700,800,900"
+      rel="stylesheet"
+    />
+
+    <title>Stocked IT</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet" />
+
+    <!-- Additional CSS Files -->
+    <link rel="stylesheet" href="../static/css/fontawesome.css" />
+    <link rel="stylesheet" href="../static/css/templatemo-grad-school.css" />
+    <link rel="stylesheet" href="../static/css/owl.css" />
+    <link rel="stylesheet" href="../static/css/lightbox.css" />
+    <link rel="stylesheet" href="../static/css/sectors.css" />
+    <link rel="stylesheet" href="../static/css/modal_button.css" />
+  </head>
+
+  <body background="../static/images/courses-bg.jpg">
+    <!--header-->
+    <!-- <header class="main-header clearfix" role="header">
+      <div class="logo">
+        <a href="#"><em>Stocked</em>IT 📈</a>
+      </div>
+    </header>
+     -->
+    <header class="main-header clearfix" role="header">
+      <div class="logo">
+        <a href="index.html"><em>Stocked</em>IT 📈</a>
+      </div>
+      <a href="#menu" class="menu-link"><i class="fa fa-bars"></i></a>
+      <nav id="menu" class="main-nav" role="navigation">
+        <ul class="main-menu">
+          <li><a href="index.html">Home</a></li>
+        </ul>
+      </nav>
+    </header>
+  
+    
+    
+    
+    
+    
+    <div class="section-heading">
+      <h2>Private & Public Banks</h2>
+    </div>
+
+
+
+
+
+    <div>
+      <table>
+        <tr id="header">
+          <th>Stock Name</th>
+          <th>Dividend Yield (%)</th>
+          <th>5 Year CAGR (%)</th>
+          <th>Market Capitalization</th>
+          <th>CASA</th>
+          <th>StockedIt Points</th>
+        </tr>
+        <tr>
+          <td>{{ banklist[0][0] }}</td>
+          <td>{{ banklist[0][1] }}</td>
+          <td>{{ banklist[0][2] }}</td>
+          <td>{{ banklist[0][3] }}</td>
+          <td>{{ banklist[0][4] }}</td>
+          <td>{{ banklist[0][5] }}</td>
+        </tr>
+        <tr>
+          <td>{{ banklist[1][0] }}</td>
+          <td>{{ banklist[1][1] }}</td>
+          <td>{{ banklist[1][2] }}</td>
+          <td>{{ banklist[1][3] }}</td>
+          <td>{{ banklist[1][4] }}</td>
+          <td>{{ banklist[1][5] }}</td>
+
+        </tr>
+        <tr>
+          <td>{{ banklist[2][0] }}</td>
+          <td>{{ banklist[2][1] }}</td>
+          <td>{{ banklist[2][2] }}</td>
+          <td>{{ banklist[2][3] }}</td>
+          <td>{{ banklist[2][4] }}</td>
+          <td>{{ banklist[2][5] }}</td>
+
+        </tr>
+        <tr>
+          <td>{{ banklist[3][0] }}</td>
+          <td>{{ banklist[3][1] }}</td>
+          <td>{{ banklist[3][2] }}</td>
+          <td>{{ banklist[3][3] }}</td>
+          <td>{{ banklist[3][4] }}</td>
+          <td>{{ banklist[3][5] }}</td>
+
+        </tr>
+        <tr>
+          <td>{{ banklist[4][0] }}</td>
+          <td>{{ banklist[4][1] }}</td>
+          <td>{{ banklist[4][2] }}</td>
+          <td>{{ banklist[4][3] }}</td>
+          <td>{{ banklist[4][4] }}</td>
+          <td>{{ banklist[4][5] }}</td>
+        </tr>
+        <tr>
+          <td>{{ banklist[5][0] }}</td>
+          <td>{{ banklist[5][1] }}</td>
+          <td>{{ banklist[5][2] }}</td>
+          <td>{{ banklist[5][3] }}</td>
+          <td>{{ banklist[5][4] }}</td>
+          <td>{{ banklist[5][5] }}</td>
+
+        </tr>
+        <tr>
+          <td>{{ banklist[6][0] }}</td>
+          <td>{{ banklist[6][1] }}</td>
+          <td>{{ banklist[6][2] }}</td>
+          <td>{{ banklist[6][3] }}</td>
+          <td>{{ banklist[6][4] }}</td>
+          <td>{{ banklist[6][5] }}</td>
+
+        </tr>
+        <tr>
+          <td>{{ banklist[7][0] }}</td>
+          <td>{{ banklist[7][1] }}</td>
+          <td>{{ banklist[7][2] }}</td>
+          <td>{{ banklist[7][3] }}</td>
+          <td>{{ banklist[7][4] }}</td>
+          <td>{{ banklist[7][5] }}</td>
+
+        </tr>
+      </table>
+    </div>
+    
+    <br />
+    <br />
+    
+    <div class="button-self">
+      <input
+        class="modal-btn"
+        type="checkbox"
+        id="modal-btn"
+        name="modal-btn"
+      />
+      <label for="modal-btn">
+        INSIGHTS<i class="uil uil-expand-arrows"></i
+      ></label>
+      <div class="modal">
+        <div class="modal-wrap">
+          <p><b>POSITIVES:</b></p>
+          <p style="color: rgb(55, 0, 255)">
+            {{ ",".join(banklist[0][6]) }}
+            <br>
+            {{ ",".join(banklist[1][6]) }}
+            <br>
+            {{ ",".join(banklist[2][6]) }}
+            <br>
+            {{ ",".join(banklist[3][6]) }}
+            <br>
+            {{ ",".join(banklist[4][6]) }}
+            <br>
+            {{ ",".join(banklist[5][6]) }}
+            <br>
+            {{ ",".join(banklist[6][6]) }}
+            <br>
+            {{ ",".join(banklist[7][6]) }}
+          </p>
+          <p><b>NEGATIVES:</b></p>
+          <p style="color: rgb(119, 78, 16)">
+            {{ ",".join(banklist[0][7]) }}
+            <br>
+            {{ ",".join(banklist[1][7]) }}
+            <br>
+            {{ ",".join(banklist[2][7]) }}
+            <br>
+            {{ ",".join(banklist[3][7]) }}
+            <br>
+            {{ ",".join(banklist[4][7]) }}
+            <br>
+            {{ ",".join(banklist[5][7]) }}
+            <br>
+            {{ ",".join(banklist[6][7]) }}
+            <br>
+            {{ ",".join(banklist[7][7]) }}
+          </p>
+        </div>
+      <br>
+      <br>
+      </div>
+    </div>
+
+    <!-- <div class="section-heading">
+      <h2>Outline
+      </h2>
+    </div> -->
+
+    <div class="para-content">
+      <br>
+      <br>
+      <br>
+      <h1><strong>OUTLINE</strong></h1>
+      <br>
+      <br>
+      <h3>Abstract:</h3>
+      <br>
+      <p> Due to the volatile nature of stocks people often perceive it as gambling. The stock market isn’t just based on chance like gambling but a variety of factors like economic conditions, company information and so on. You can always tip the scales in your favour by having adequate research. StockedIT can help you in this research.
+        StockedIT simplifies the fundamentalal analysis of all the stocks available in the sector. The companies are ranked in each sector depending on their performance with these indicators and the best-performing stocks for long-term risk-free investments. 
+        StockedIT uses a variety of indicators some of these are:</p>
+      <br>
+      <p><b>Reserves & Surplus:</b> Reserves & Surplus are profits generated from the business that is retained by the company. These reserves can be used for specific purposes like buying fixed assets, paying for legal settlements, debt repayments, or payment of dividends.
+        <i><b>An increasing trend in Reserves & Surplus is always a good sign.
+      </b></i> </p>
+      <br>
+      <p><b>Dividend Yield:</b> The dividend yield, expressed as a percentage, is a financial ratio (dividend/price) that shows how much a company pays out in dividends each year relative to its stock price to its shareholders.</p>
+        <br>
+      <p><b>5 Yr CAGR: </b> it is the 5-year compounded annual growth rate of the stock. </p>
+        <br>
+      <p><b>Market Capitalization:</b> Market capitalization refers to how much a company is worth as determined by the stock market.</p>
+        <br>
+      <p><b>StockedIT Points: </b> Points are calculated by our model by measuring the stock’s performance on various fundamental indicators. Some of them are listed below.</p>
+        <br>
+      <p><b>CASA ratio:</b> CASA ratio is the ratio of deposits in current and savings accounts to the total deposits.  <i><b>More the CASA better the stock. 
+        </b></i> </p>
+        <br>
+      <p><b>Revenue From Operations:</b> Revenue from operations is the income generated by an entity from its daily core business operations. If the entity is able to generate a steady flow of income from its operations, <i><b>it is always a good sign. </b></i> </p>
+      <br>
+
+      <p><b>Profit/Loss For The Period:</b> Profit simply means revenue that remains after expenses. These expenses include tax, interest, depreciation (reduction in the value of a tangible asset due to wear and tear or technological obsolescence), and amortization (reduction in the value of intangible assets such as software, copyrights, etc). </p>
+      <br>
+    
+
+      
+
+      <p><b>Interest Expended:</b> It represents interest payable on any borrowings – bonds, loans, convertible debt or lines of credit.
+      </p>
+      <br>
+
+      <p><b>Interest Earned:</b> Total interest earned on the loans provided by the bank.  </p>
+      <br>
+
+      <p><b>Deposits:</b> Number of deposits made to the entity. </p>
+      <br>
+
+      <p><b>Advances:</b> Advance payments are amounts paid before a good or service is actually received.  </p>
+      <br>
+
+      <p><b>Provisions and Contingencies:</b> A provision is a liability of uncertain timing or amount. An entity recognises a provision if it is probable that an outflow of cash or other economic resources will be required to settle the provision.
+      </p>
+      <br>
+
+      <p><b>Net NPA to Advances:</b> It measures the quality of the loan of the institution and the overall health of it. Net NPA is caused by the low number of provisions for the unpaid debts. The higher amount of Net NPA affects the liquidity and profitability of the company. </p>
+      <br>
+
+     
+
+      <p><b>Free Cash Flow:</b> it is an important indicator for analysis. It is the cash a company generates after taking into consideration cash outflows that support its operations and maintain its capital assets. In other words, free cash flow is the cash left over after a company pays for its operating expenses and capital expenditures (rent, payroll, etc.). A company can use it as it pleases. <b><i>Negative cash flows back-to-back for more than 2 years is a very dangerous sign.</i></b></p>
+      <br>
+
+      <p><b>Net NPA:</b> Net NPA is a term used by commercial banks to indicate less allowance for poor and uncertain debts than the amount of non-performing loans. ... Thus, if one deducts the provision for unpaid loans from unpaid obligations, the resulting sum relates to the net non-performing assets.
+      </p>
+      <br>
+
+     
+
+      <p><b>Pledged Shares (if any):</b> Pledging of shares is an arrangement in which the promoters of a company use their shares as collateral to fulfill their financial requirements. this reduces the promoters' shareholding, and the value of the stock is decreased as the confidence in the company is lost.
+        <b><i>A company having pledged shares is a negative sign </i></b>unless and until it is done to fulfill SEBI requirements.</p>
+      <br>
+
+      <p><b>Price to Earnings Ratio:</b> The price-to-earnings ratio (P/E ratio) is the ratio for valuing a company that measures its current share price relative to its earnings per share (EPS).
+        P/E ratios are used by investors and analysts to determine the relative value of a company's shares in an apples-to-apples comparison. It can also be used to compare a company against its own historical record or to compare aggregate markets against one another or over time.
+      It is generally compared between peers to discover a value-for-money stock in the sector basket. If stock PE is less than the sector PE it is considered to be a good stock, and vice versa. But analysis with this indicator is very complicated a lot of other factors are also involved.</p>
+      <br>
+      <br>
+
+
+  </div>
+  </body>
+</html>
